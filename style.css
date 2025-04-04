@@ -17,3 +17,33 @@ body{
 .wrapper{
     padding-top: 90px;
 }
+
+.header-1{
+       
+        font-weight: 500;
+        font-size: 2em;
+        border-bottom: 1px solid #000;
+       
+        padding-bottom: 1.2em;
+        font-family: poppins;
+}
+.answer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-content button{
+    text-align: left;
+    border: 2px solid #001e4d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answer-content button:hover{
+    background-color: #003b99;
+    color: #fff;
+}
