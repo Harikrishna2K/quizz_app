@@ -37,7 +37,7 @@ body{
     border: 2px solid #001e4d;
     border-radius: 10px;
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-bottom: 20px;
     cursor: pointer;
     transition: all 0.3s;
@@ -61,3 +61,19 @@ body{
 
 
 }
+.answer-correct{
+    background: #008000;
+}
+
+.answer-incorrect{
+    background: #f08080;
+}
+
+button.answer-correct:disabled{
+    background: #008000;
+}
+
+button.answer-incorrect:disabled{
+    background: #f08080;
+
+}  
