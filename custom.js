@@ -101,5 +101,8 @@ function selectAnswer(e){
     
 }
 
+
+
+
 startQuiz();
 
