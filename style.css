@@ -43,7 +43,7 @@ body{
     transition: all 0.3s;
 }
 
-.answer-content button:hover{
+.answer-content button:hover:not([disabled]){
     background-color: #003b99;
     color: #fff;
 }
