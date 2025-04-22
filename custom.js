@@ -87,19 +87,32 @@ function selectAnswer(e){
     Array.from(answerElement.children).forEach(button =>{
         console.log("Entering inside the arrays code")
         if(button.dataset.correct === "true"){
-                console.log("Found the true value")
-                button.classList.add("answer-correct");
-                console.log("Ended the true value")
+            console.log("Found the true value")
+            button.classList.add("answer-correct");
+            console.log("Ended the true value")
         }
 
         button.disabled = true;
     });
 
     nextElement.style.display = "block";
+    nextQuestion();
 
 
     
 }
+function nextQuestion(){
+    console.log("Entering inside the next question")
+    nextElement.addEventListener("click", handleNextButton)
+}
 
+function handleNextButton(){
+
+    console.log("Entering inside the handleNext Button")
+    currentQuestionIndex ++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }
+}
 startQuiz();
 
